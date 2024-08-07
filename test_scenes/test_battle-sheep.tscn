@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dy72ti8jvcibq"]
+
+[ext_resource type="PackedScene" uid="uid://bwvrqfcaaxsxm" path="res://Player/player.tscn" id="1_us41m"]
+[ext_resource type="PackedScene" uid="uid://biaaendqgrnvu" path="res://enemies/sheep.tscn" id="3_kj231"]
+
+[node name="TestBattle" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_us41m")]
+position = Vector2(103, 135)
+speed = 4.0
+
+[node name="Sheep" parent="." instance=ExtResource("3_kj231")]
+position = Vector2(584, 301)
